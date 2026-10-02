@@ -1,0 +1,510 @@
+/* ========================================
+   OVERALL PAGE
+   ======================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #fce4ec,
+        #eee5ff
+    );
+
+    color: #9b59b6;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 0 25px;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #cda4ff,
+        #f3a6c8
+    );
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 20px rgba(100, 70, 120, 0.18);
+}
+
+
+/* ========================================
+   NAME - PACIFICO
+   ======================================== */
+
+header h1 {
+    font-family: "Pacifico", cursive;
+
+    color: #ffffff;
+
+    font-size: 60px;
+
+    font-weight: 400;
+
+    margin: 0;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   HEADER PROFILE PICTURE
+   ======================================== */
+
+header img {
+    width: 160px;
+
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin: 15px auto;
+
+    border: 5px solid #ffffff;
+
+    box-shadow:
+        0 5px 15px rgba(100, 70, 120, 0.20);
+}
+
+
+/* ========================================
+   HEADER CONTACT INFORMATION
+   ======================================== */
+
+header p {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    margin: 5px 0;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   HEADER LINE
+   ======================================== */
+
+header hr {
+    border: none;
+
+    height: 3px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    width: 70%;
+
+    margin: 15px auto;
+}
+
+
+/* ========================================
+   RESUME BUBBLES
+   ======================================== */
+
+section {
+    position: relative;
+
+    height: auto;
+
+    box-sizing: border-box;
+
+    margin-top: 25px;
+
+    /*
+       110px = WHITE TITLE AREA
+       35px = LEFT/RIGHT SPACING
+    */
+
+    padding: 110px 35px 0 35px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0px,
+        #ffffff 110px,
+        #cda4ff 110px,
+        #f3a6c8 100%
+    );
+
+    box-shadow:
+        0 5px 15px rgba(100, 70, 120, 0.12);
+
+    text-align: left;
+}
+
+
+/* ========================================
+   COLORED CONTENT AREA
+   ======================================== */
+
+.section-content {
+    padding: 30px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    text-align: left;
+}
+
+
+/* ========================================
+   SECTION TITLES
+   ======================================== */
+
+h2 {
+    position: absolute;
+
+    top: 0;
+
+    left: 35px;
+
+    right: 35px;
+
+    height: 110px;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    color: #9b59b6;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    text-align: left;
+}
+
+
+/* ========================================
+   SUBHEADINGS
+   ======================================== */
+
+h3 {
+    color: #ffffff;
+
+    font-size: 26px;
+
+    font-weight: 400;
+
+    line-height: 1.35;
+
+    margin: 8px 0;
+
+    text-align: left;
+}
+
+
+/* ========================================
+   BODY TEXT
+   ======================================== */
+
+p {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    margin: 6px 0;
+
+    max-width: 780px;
+
+    text-align: left;
+}
+
+
+/* ========================================
+   EDUCATION LIST
+   ======================================== */
+
+ul {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    margin: 4px 0 10px 25px;
+
+    padding-left: 20px;
+
+    text-align: left;
+}
+
+
+li {
+    margin: 4px 0;
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 15px 0;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   FOOTER TEXT
+   ======================================== */
+
+footer p {
+    color: #ffffff;
+
+    margin: 0;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+
+        margin: 20px auto;
+
+        font-size: 16px;
+    }
+
+
+    header {
+        padding: 30px 15px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    header h1 {
+        font-size: 42px;
+
+        margin: 0;
+    }
+
+
+    header p {
+        font-size: 17px;
+
+        text-align: center;
+    }
+
+
+    /* ========================================
+       MOBILE PROFILE PICTURE
+       ======================================== */
+
+    header img {
+        width: 130px;
+
+        height: 130px;
+
+        margin: 12px auto;
+
+        border-width: 4px;
+    }
+
+
+    section {
+        padding: 90px 20px 0 20px;
+
+        height: auto;
+
+        background: linear-gradient(
+            to bottom,
+            #ffffff 0px,
+            #ffffff 90px,
+            #cda4ff 90px,
+            #f3a6c8 100%
+        );
+    }
+
+
+    .section-content {
+        padding: 25px 0;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: stretch;
+
+        text-align: left;
+    }
+
+
+    h2 {
+        top: 0;
+
+        left: 20px;
+
+        right: 20px;
+
+        height: 90px;
+
+        font-size: 27px;
+
+        text-align: left;
+    }
+
+
+    h3 {
+        font-size: 22px;
+
+        font-weight: 400;
+
+        line-height: 1.35;
+
+        margin: 6px 0;
+
+        text-align: left;
+    }
+
+
+    p {
+        font-size: 18px;
+
+        line-height: 1.5;
+
+        margin: 6px 0;
+
+        font-weight: 400;
+
+        text-align: left;
+    }
+
+
+    ul {
+        font-size: 18px;
+
+        line-height: 1.5;
+
+        margin: 4px 0 10px 20px;
+
+        padding-left: 18px;
+
+        text-align: left;
+    }
+
+
+    li {
+        margin: 4px 0;
+    }
+
+
+    footer {
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+
+        width: 100%;
+    }
+
+
+    footer p {
+        font-size: 16px;
+
+        text-align: center;
+
+        margin: 0;
+    }
+}
